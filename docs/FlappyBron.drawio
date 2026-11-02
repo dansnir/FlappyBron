@@ -1,0 +1,158 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="y4zUQH5SDoFAgsXUM6KB">
+    <mxGraphModel dx="2946" dy="1444" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Wg3OXvB501kn7IBomv25-7" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="Wg3OXvB501kn7IBomv25-6" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="24.5" y="86.67000000000007" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Wg3OXvB501kn7IBomv25-1" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Start" vertex="1">
+          <mxGeometry height="76.67" width="115" x="-32.99000000000001" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="Wg3OXvB501kn7IBomv25-9" edge="1" parent="1" source="Wg3OXvB501kn7IBomv25-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="Wg3OXvB501kn7IBomv25-8" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Wg3OXvB501kn7IBomv25-6" parent="1" style="whiteSpace=wrap;html=1;" value="Create JFrame and FlappyBron game panel" vertex="1">
+          <mxGeometry height="60" width="120" x="-35.5" y="175.00500000000002" as="geometry" />
+        </mxCell>
+        <mxCell id="Wg3OXvB501kn7IBomv25-11" edge="1" parent="1" source="Wg3OXvB501kn7IBomv25-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="Wg3OXvB501kn7IBomv25-10" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Wg3OXvB501kn7IBomv25-8" parent="1" style="whiteSpace=wrap;html=1;" value="Load game images and assets" vertex="1">
+          <mxGeometry height="60" width="120" x="-35.5" y="315.005" as="geometry" />
+        </mxCell>
+        <mxCell id="Wg3OXvB501kn7IBomv25-13" edge="1" parent="1" source="Wg3OXvB501kn7IBomv25-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="Wg3OXvB501kn7IBomv25-12" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Wg3OXvB501kn7IBomv25-10" parent="1" style="whiteSpace=wrap;html=1;" value="Initialize player, obstacles, score, and game state" vertex="1">
+          <mxGeometry height="60" width="120" x="-35.5" y="455.005" as="geometry" />
+        </mxCell>
+        <mxCell id="Wg3OXvB501kn7IBomv25-15" edge="1" parent="1" source="Wg3OXvB501kn7IBomv25-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="Wg3OXvB501kn7IBomv25-14" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Wg3OXvB501kn7IBomv25-12" parent="1" style="whiteSpace=wrap;html=1;" value="Display start screen" vertex="1">
+          <mxGeometry height="60" width="120" x="-35.5" y="595.005" as="geometry" />
+        </mxCell>
+        <mxCell id="Wg3OXvB501kn7IBomv25-17" edge="1" parent="1" source="Wg3OXvB501kn7IBomv25-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="Wg3OXvB501kn7IBomv25-16" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Wg3OXvB501kn7IBomv25-14" parent="1" style="whiteSpace=wrap;html=1;" value="Player presses space bar" vertex="1">
+          <mxGeometry height="60" width="120" x="-35.5" y="735.005" as="geometry" />
+        </mxCell>
+        <mxCell id="Wg3OXvB501kn7IBomv25-19" edge="1" parent="1" source="Wg3OXvB501kn7IBomv25-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="Wg3OXvB501kn7IBomv25-18" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Wg3OXvB501kn7IBomv25-16" parent="1" style="whiteSpace=wrap;html=1;" value="Start timer and game loop" vertex="1">
+          <mxGeometry height="60" width="120" x="-35.5" y="875.005" as="geometry" />
+        </mxCell>
+        <mxCell id="Wg3OXvB501kn7IBomv25-21" edge="1" parent="1" source="Wg3OXvB501kn7IBomv25-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="Wg3OXvB501kn7IBomv25-20" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Wg3OXvB501kn7IBomv25-18" parent="1" style="whiteSpace=wrap;html=1;" value="Read keyboard input" vertex="1">
+          <mxGeometry height="60" width="120" x="-35.5" y="1015.0050000000001" as="geometry" />
+        </mxCell>
+        <mxCell id="Wg3OXvB501kn7IBomv25-23" edge="1" parent="1" source="Wg3OXvB501kn7IBomv25-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="Wg3OXvB501kn7IBomv25-22" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Wg3OXvB501kn7IBomv25-20" parent="1" style="whiteSpace=wrap;html=1;" value="Update LeBron&#39;s position using gravity and jump velocity" vertex="1">
+          <mxGeometry height="60" width="120" x="-35.5" y="1155.005" as="geometry" />
+        </mxCell>
+        <mxCell id="Wg3OXvB501kn7IBomv25-25" edge="1" parent="1" source="Wg3OXvB501kn7IBomv25-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="Wg3OXvB501kn7IBomv25-24" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Wg3OXvB501kn7IBomv25-22" parent="1" style="whiteSpace=wrap;html=1;" value="Move obstacles and generate new ones" vertex="1">
+          <mxGeometry height="60" width="120" x="-35.5" y="1295.005" as="geometry" />
+        </mxCell>
+        <mxCell id="Wg3OXvB501kn7IBomv25-30" edge="1" parent="1" source="Wg3OXvB501kn7IBomv25-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="Wg3OXvB501kn7IBomv25-29" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Wg3OXvB501kn7IBomv25-38" connectable="0" parent="Wg3OXvB501kn7IBomv25-30" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Yes&lt;/font&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.4343" y="-1" as="geometry">
+            <mxPoint x="-1" y="91" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Wg3OXvB501kn7IBomv25-35" edge="1" parent="1" source="Wg3OXvB501kn7IBomv25-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="Wg3OXvB501kn7IBomv25-34" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Wg3OXvB501kn7IBomv25-39" connectable="0" parent="Wg3OXvB501kn7IBomv25-35" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;No&lt;/font&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.605" y="-2" as="geometry">
+            <mxPoint x="-2" y="5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Wg3OXvB501kn7IBomv25-24" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="Collision with obstacle or ground?" vertex="1">
+          <mxGeometry height="104.99" width="104.99" x="-27.99000000000001" y="1425.01" as="geometry" />
+        </mxCell>
+        <mxCell id="Wg3OXvB501kn7IBomv25-56" edge="1" parent="1" source="Wg3OXvB501kn7IBomv25-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="Wg3OXvB501kn7IBomv25-55" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Wg3OXvB501kn7IBomv25-29" parent="1" style="whiteSpace=wrap;html=1;" value="End game and display final score" vertex="1">
+          <mxGeometry height="60" width="120" x="302.995" y="730.0049999999999" as="geometry" />
+        </mxCell>
+        <mxCell id="Wg3OXvB501kn7IBomv25-41" edge="1" parent="1" source="Wg3OXvB501kn7IBomv25-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="Wg3OXvB501kn7IBomv25-40" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Wg3OXvB501kn7IBomv25-44" connectable="0" parent="Wg3OXvB501kn7IBomv25-41" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Yes&lt;/font&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.279" y="3" as="geometry">
+            <mxPoint x="-3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Wg3OXvB501kn7IBomv25-43" edge="1" parent="1" source="Wg3OXvB501kn7IBomv25-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="Wg3OXvB501kn7IBomv25-42" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Wg3OXvB501kn7IBomv25-45" connectable="0" parent="Wg3OXvB501kn7IBomv25-43" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;No&lt;/font&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.6267" y="2" as="geometry">
+            <mxPoint x="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Wg3OXvB501kn7IBomv25-34" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="Passed an obstacle?&amp;nbsp;" vertex="1">
+          <mxGeometry height="104.99" width="104.99" x="-523" y="435.01" as="geometry" />
+        </mxCell>
+        <mxCell id="Wg3OXvB501kn7IBomv25-47" edge="1" parent="1" source="Wg3OXvB501kn7IBomv25-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="Wg3OXvB501kn7IBomv25-46" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Wg3OXvB501kn7IBomv25-40" parent="1" style="whiteSpace=wrap;html=1;" value="Increase score" vertex="1">
+          <mxGeometry height="60" width="120" x="-403.005" y="595.005" as="geometry" />
+        </mxCell>
+        <mxCell id="Wg3OXvB501kn7IBomv25-50" edge="1" parent="1" source="Wg3OXvB501kn7IBomv25-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="Wg3OXvB501kn7IBomv25-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Wg3OXvB501kn7IBomv25-42" parent="1" style="whiteSpace=wrap;html=1;" value="Keep current score" vertex="1">
+          <mxGeometry height="60" width="120" x="-232.995" y="595.005" as="geometry" />
+        </mxCell>
+        <mxCell id="Wg3OXvB501kn7IBomv25-62" edge="1" parent="1" source="Wg3OXvB501kn7IBomv25-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="Wg3OXvB501kn7IBomv25-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Wg3OXvB501kn7IBomv25-46" parent="1" style="whiteSpace=wrap;html=1;" value="Redraw game screen" vertex="1">
+          <mxGeometry height="60" width="120" x="-332.995" y="875.005" as="geometry" />
+        </mxCell>
+        <mxCell id="Wg3OXvB501kn7IBomv25-57" edge="1" parent="1" source="Wg3OXvB501kn7IBomv25-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" target="Wg3OXvB501kn7IBomv25-10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="362.9949999999999" y="489.9999999999998" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Wg3OXvB501kn7IBomv25-61" connectable="0" parent="Wg3OXvB501kn7IBomv25-57" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Yes&lt;/font&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.6354" y="2" as="geometry">
+            <mxPoint x="-7" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Wg3OXvB501kn7IBomv25-59" edge="1" parent="1" source="Wg3OXvB501kn7IBomv25-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="Wg3OXvB501kn7IBomv25-58" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Wg3OXvB501kn7IBomv25-60" connectable="0" parent="Wg3OXvB501kn7IBomv25-59" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;No&lt;/font&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.2351" y="-1" as="geometry">
+            <mxPoint x="12" y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Wg3OXvB501kn7IBomv25-55" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="Restart?" vertex="1">
+          <mxGeometry height="110" width="110" x="308" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="Wg3OXvB501kn7IBomv25-58" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="End" vertex="1">
+          <mxGeometry height="80" width="120" x="513" y="485" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
