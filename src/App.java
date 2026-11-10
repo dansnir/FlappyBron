@@ -13,6 +13,7 @@ public class App {
         FlappyBron flappyBron = new FlappyBron();
         frame.add(flappyBron);
         frame.pack();
+        flappyBron.requestFocus();
         frame.setVisible(true);
 
     }
