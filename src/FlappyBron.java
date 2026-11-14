@@ -15,8 +15,8 @@ public class FlappyBron extends JPanel implements ActionListener, KeyListener {
 
     int bronX = boardWidth / 8;
     int bronY = boardHeight / 2;
-    int bronWidth = 68;
-    int bronHeight = 48;
+    int bronWidth = 45;
+    int bronHeight = 60;
 
     public class Bron {
         int x = bronX;
@@ -58,6 +58,7 @@ public class FlappyBron extends JPanel implements ActionListener, KeyListener {
 
     Timer gameLoop;
     Timer placePipeTimer;
+    boolean gameOver = false;
 
     public FlappyBron() {
         setPreferredSize(new Dimension(boardWidth, boardHeight));
@@ -120,19 +121,39 @@ public class FlappyBron extends JPanel implements ActionListener, KeyListener {
         for (int i = 0; i < pipes.size(); i++) {
             Pipe pipe = pipes.get(i);
             pipe.x += velocityX;
+
+            if (collision(bron, pipe)) {
+                gameOver = true;
+            }
         }
+        
+        if (bron.y > boardHeight) {
+            gameOver = true;
+        }
+    }
+
+    public boolean collision(Bron a, Pipe b) {
+        return a.x < b.x + b.width &&  //a's left edge is to the left of b's right edge
+               a.x + a.width > b.x &&  //a's right edge is to the right of b's left edge
+               a.y < b.y + b.height && //a's top edge is above b's bottom edge
+               a.y + a.height > b.y;   //a's bottom edge is below b's top edge
+
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
         move();
         repaint();
+        if (gameOver) {
+            placePipeTimer.stop();
+            gameLoop.stop();
+        }
     }
 
     @Override
     public void keyPressed(KeyEvent e) {
         if (e.getKeyCode() == KeyEvent.VK_SPACE) {
-            velocityY = -13;
+            velocityY = -10;
         }
     }
 
