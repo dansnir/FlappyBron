@@ -168,6 +168,15 @@ public class FlappyBron extends JPanel implements ActionListener, KeyListener {
     public void keyPressed(KeyEvent e) {
         if (e.getKeyCode() == KeyEvent.VK_SPACE) {
             velocityY = -10;
+            if (gameOver) {
+                bron.y = bronY;
+                velocityY = 0;
+                pipes.clear();
+                score = 0;
+                gameOver = false;
+                gameLoop.start();
+                placePipeTimer.start();
+            }
         }
     }
 
