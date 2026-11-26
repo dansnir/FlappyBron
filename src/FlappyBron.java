@@ -1,8 +1,9 @@
 import java.awt.*;
 import java.awt.event.*;
-import javax.swing.*;
 import java.util.ArrayList;
 import java.util.Random;
+import javax.sound.sampled.*;
+import javax.swing.*;
 
 public class FlappyBron extends JPanel implements ActionListener, KeyListener {
     int boardWidth = 360;
@@ -61,6 +62,8 @@ public class FlappyBron extends JPanel implements ActionListener, KeyListener {
     boolean gameOver = false;
     double score = 0;
 
+    Music music;
+
     public FlappyBron() {
         setPreferredSize(new Dimension(boardWidth, boardHeight));
         setFocusable(true);
@@ -74,6 +77,9 @@ public class FlappyBron extends JPanel implements ActionListener, KeyListener {
         bron = new Bron(bronImage);
         pipes = new ArrayList<Pipe>();
 
+        music = new Music();
+        music.play("./lebron_song.wav");
+
         placePipeTimer = new Timer(1500, new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -81,7 +87,6 @@ public class FlappyBron extends JPanel implements ActionListener, KeyListener {
             }
         });
         placePipeTimer.start();
-
 
         gameLoop = new Timer(1000/60, this);
         gameLoop.start();
@@ -99,6 +104,7 @@ public class FlappyBron extends JPanel implements ActionListener, KeyListener {
         pipes.add(bottomPipe);
     }
 
+    @Override
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
         draw(g);
@@ -161,6 +167,7 @@ public class FlappyBron extends JPanel implements ActionListener, KeyListener {
         if (gameOver) {
             placePipeTimer.stop();
             gameLoop.stop();
+            music.stop();
         }
     }
 
@@ -176,6 +183,7 @@ public class FlappyBron extends JPanel implements ActionListener, KeyListener {
                 gameOver = false;
                 gameLoop.start();
                 placePipeTimer.start();
+                music.play("./lebron_song.wav");
             }
         }
     }
@@ -186,6 +194,27 @@ public class FlappyBron extends JPanel implements ActionListener, KeyListener {
 
     @Override
     public void keyTyped(KeyEvent e) {
+    }
+
+    public class Music {
+        private Clip clip;
+
+        public void play(String path) {
+            try {
+                AudioInputStream audio = AudioSystem.getAudioInputStream(getClass().getResource(path));
+                clip = AudioSystem.getClip();
+                clip.open(audio);
+                clip.loop(Clip.LOOP_CONTINUOUSLY);
+                clip.start();
+            } catch (Exception e) {
+                System.out.println(e.getMessage());
+                e.printStackTrace();
+            }
+        }
+
+        public void stop() {
+            if (clip != null) clip.stop();
+        }
     }
     
 }
